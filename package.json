@@ -12,11 +12,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": "react-app"
